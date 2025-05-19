@@ -318,8 +318,8 @@ body {
 /* About Page Styles */
 .about-container {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 7rem auto 2rem; /* Increased top margin to account for navbar */
+  padding: 2rem 1rem;
 }
 
 .about-header {
@@ -349,6 +349,63 @@ body {
   grid-template-columns: 300px 1fr;
   gap: 3rem;
   align-items: start;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-avatar {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    margin-top: 4rem;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+  }
+
+  .about-avatar {
+    max-width: 200px;
+  }
+
+  .avatar-name {
+    font-size: 1.1rem;
+  }
+
+  .avatar-role {
+    font-size: 0.8rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
 }
 
 .about-avatar {
